@@ -1,0 +1,9 @@
+{
+    "path" : "~/ownCloud/Documents/SampleSize",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

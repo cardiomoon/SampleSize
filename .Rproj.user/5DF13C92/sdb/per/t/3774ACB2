@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "## numericInput3 : numericInputs side by side\nnumericInput3<-function (inputId, label, value, min=NA,max=NA,step=NA,width=100,...) \n{\n  div(style=\"display:inline-block;\",\n      tags$label(label, `for` = inputId,class=\"control-label\"), \n      tags$input(id = inputId, type = \"number\", class=\"form-control\",\n                 value = value, min=min,max=max,step=step,style=paste(\"width: \",width,\"px;\",sep=\"\"),...)\n  )\n}\n\n## numericInput : input and label side-by-side\nnumericInput4<-function (inputId, label, value, min=NA,max=NA,step=NA,width=80,labelwidth=180,...) \n{\n    div(class=\"form-group shiny-input-container\",\n        \n        tags$label(label, `for` = inputId,class=\"control-label\",\n                   style=paste0(\"display:inline-block;width:\",labelwidth,\"px;\")), \n        tags$input(id = inputId, type = \"number\", class=\"form-control\",style=\"display:inline-block;\",\n                   value = value, min=min,max=max,step=step,style=paste(\"width: \",width,\"px;\",sep=\"\"),...)\n        \n    )\n}\n",
+    "created" : 1480162916515.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1952357110",
+    "id" : "3774ACB2",
+    "lastKnownWriteTime" : 1480162983,
+    "last_content_update" : 1480162983596,
+    "path" : "~/ownCloud/Documents/SampleSize/numericInput4.R",
+    "project_path" : "numericInput4.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
