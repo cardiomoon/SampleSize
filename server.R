@@ -7,8 +7,8 @@
 
 library(shiny)
 library(ggplot2)
-library(plotly)
-library(markdown)
+library(ggiraph)
+
 
 ref=read.csv("ref.csv")
 
@@ -477,7 +477,17 @@ shinyServer(function(input, output,session) {
         
         df=data.frame(power=power,n=nB)
        
-        ggplotly(ggplot(df,aes(power,n))+geom_line()+labs(x="power",y="Sample Size"))
+        # power1<-input$power
+        # beta1<-1-power1
+        # nB1<-size.t.test(meandiff=muA-muB,sd=sd,sdA=sdA,sdB=sdB,
+        #                  alpha=alpha,beta=beta1,delta=delta,kappa=kappa,mode=mode)
+        
+        p<-ggplot(df,aes(power,n))+geom_line()+labs(x="power",y="Sample Size")
+            # geom_segment(x=0.5,xend=power1,y=nB1,yend=nB1,color="red",linetype=2)+
+            # geom_segment(x=power1,xend=power1,y=min(df$n),yend=nB1,color="red",linetype=2)+
+            # annotate("text",x=(0.5+power1)/2,y=nB1,label=round(nB1,4),vjust=-1.2)
+        
+        ggplotly(p)
         
             
     })
@@ -658,9 +668,7 @@ shinyServer(function(input, output,session) {
         delta<-input$delta9
         kappa<-input$k9
         mode<-as.numeric(input$oddratio)
-        
        
-        
         power=seq(0.5,0.95,by=0.01)
         beta=1-power
         
@@ -668,7 +676,17 @@ shinyServer(function(input, output,session) {
         
         df=data.frame(power=power,n=nB)
         
-        ggplotly(ggplot(df,aes(power,nB))+geom_line()+labs(x="power",y="Sample Size"))
+        # power1<-input$power9
+        # beta1<-1-power1
+        # nB1<-size.odds.ratio(pA,pB,alpha,beta1,delta,kappa,mode)
+        
+        p<-ggplot(df,aes(power,n))+
+            geom_line()+labs(x="power",y="Sample Size")
+            # geom_segment(x=0.5,xend=power1,y=nB1,yend=nB1,color="red",linetype=2)+
+            # geom_segment(x=power1,xend=power1,y=min(df$n),yend=nB1,color="red",linetype=2)+
+            # annotate("text",x=(0.5+power1)/2,y=nB1,label=round(nB1,4),vjust=-1.2)
+        ggplotly(p)
+    
         
         
     })
@@ -779,7 +797,7 @@ shinyServer(function(input, output,session) {
     })
     
     output$about=renderPrint({
-        includeMarkdown("aboute.md")
+        includeMarkdown("readme.md")
     })
 
 })

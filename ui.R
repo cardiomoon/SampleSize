@@ -8,6 +8,8 @@
 library(shiny)
 library(shinydashboard)
 library(plotly)
+library(ggiraph)
+
 
 source("numericInput4.R")
 
@@ -35,7 +37,7 @@ body <- dashboardBody(
                                        "1-Sample Non-Inferiority or Superiority"=3,"1-Sample Equivalence"=4),
                              selected=1),
                 fluidRow(
-                    box(title="1-Sample 2-Sided Equality",status="primary",
+                    box(title="Enter data",status="primary",
                         solidHeader=TRUE,
                         
                         numericInput4("mu","True mean, μ",value=2,step=1),
@@ -77,7 +79,7 @@ body <- dashboardBody(
                                        "2-Sample Non-Inferiority or Superiority"=3,"2-Sample Equivalence"=4),
                              selected=1),
                fluidRow(
-                box(title="2-Sample 2-Sided Equality",status="primary",
+                box(title="Enter data",status="primary",
                     solidHeader=TRUE,
                   
                     numericInput4("mean1","Group 'A' mean, μA",value=5,step=1),
@@ -126,7 +128,7 @@ body <- dashboardBody(
                                        "1-Way ANOVA Pairwise, 1-Sided Equalty"=2),
                              selected=1),
                 fluidRow(
-                    box(title="2-Sample 2-Sided Equality",status="primary",
+                    box(title="Enter data",status="primary",
                         solidHeader=TRUE,
                         
                         numericInput4("mean31","Group 'A' mean, μA",value=5,step=1),

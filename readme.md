@@ -39,6 +39,10 @@ No app is the product of a single person. There are many people who helped make 
 ## Homepage
 
 URL : https://github.com/cardiomoon/SampleSize
+
+
 License : GPL-3 
+
+
 BugReports : https://github.com/cardiomoon/SampleSize/Issues
 
