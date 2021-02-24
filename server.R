@@ -796,7 +796,8 @@ shinyServer(function(input, output,session) {
         p(temp)
     })
     
-    output$about=renderPrint({
+    output$about=renderUI({
+        
         includeMarkdown("readme.md")
     })
 

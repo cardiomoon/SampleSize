@@ -424,7 +424,7 @@ body <- dashboardBody(
         ),
         tabItem(tabName = "about",
                 box(width=12,
-                    htmlOutput("about")
+                    uiOutput("about")
                     )
         )
     )

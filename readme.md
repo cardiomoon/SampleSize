@@ -1,6 +1,6 @@
 # Welcome to `Sample Size` Shiny App!
 
-My name is Keon-Woong Moon. I am a Professor of Cardiology at Catholic University of Korea, South Korea. It's an honor and pleasure to introduce you my shiny app-`Web-based Meta-Analysis`.
+My name is Keon-Woong Moon. I am a Professor of Cardiology at Catholic University of Korea, South Korea. It's an honor and pleasure to introduce you my shiny app-`SampleSize`.
 
 
 ## What this app aims
@@ -46,3 +46,11 @@ License : GPL-3
 
 BugReports : https://github.com/cardiomoon/SampleSize/Issues
 
+## To run locally
+
+You can run this app in your rstudio with the following R code.
+ 
+```
+#install.packages("shiny")
+shiny::runGitHub("cardiomoon/SampleSize")
+```
