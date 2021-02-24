@@ -431,8 +431,11 @@ body <- dashboardBody(
 )
 
 # Put them together into a dashboardPage
+fluidPage(
+    h1("Sample Size Calculation by web-R.org"),
 dashboardPage(
     dashboardHeader(title = "Sample Size"),
     sidebar,
     body
+)
 )
