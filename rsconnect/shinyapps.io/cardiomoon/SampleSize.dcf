@@ -5,8 +5,8 @@ account: cardiomoon
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3689049
-bundleId: 4264708
+bundleId: 4264765
 url: https://cardiomoon.shinyapps.io/SampleSize/
-when: 1614144560.14771
+when: 1614145946.07565
 asMultiple: FALSE
 asStatic: FALSE

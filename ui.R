@@ -9,8 +9,9 @@ library(shiny)
 library(shinydashboard)
 library(plotly)
 library(ggiraph)
+library(markdown)
 
-
+options(shiny.sanitize.errors = FALSE)
 source("numericInput4.R")
 
 sidebar <- dashboardSidebar(
@@ -436,6 +437,7 @@ fluidPage(
 dashboardPage(
     dashboardHeader(title = "Sample Size"),
     sidebar,
-    body
+    body,
+    title="Sample Size Calculation by web-R.org"
 )
 )
