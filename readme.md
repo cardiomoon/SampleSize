@@ -9,14 +9,13 @@ This app is for reseachers, students or professors who want to calculate sample 
 
 ## What you need for this app
 
-All you need for this app is a modern web browser supporting HTML5(chrome, opera, safari and ...). `No R installation` is required. `No LaTex` installation is required. This app is independent of operating system of your computer. Windows, Mac and Linux PCs are all compatible. You can use even `a tablet PC` or `a smartphone`.
+All you need for this app is a modern web browser supporting HTML5(chrome, opera, safari and ...). `No R installation` is required. This app is independent of operating system of your computer. Windows, Mac and Linux PCs are all compatible. You can use even `a tablet PC` or `a smartphone`.
 
 
 ## About the Author 
 
 My name is Keon-Woong Moon. I am a Professor of Cardiology at Catholic University of Korea, South Korea. I am the creator and maintainer of the r-meta.com and web-r.org.
 
-[![alt text](http://file.mdtoday.co.kr/news/2015/0515/20150515141507_555580db9d331_1.jpg)](http://www.doctorsnews.co.kr/news/articleView.html?idxno=103653)
 [![alt text](http://image.aladin.co.kr/product/5142/44/cover/8955661797_1.jpg)](http://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8955661797)
 [![alt text](http://image.aladin.co.kr/product/6671/48/cover/8955661851_1.jpg)](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=66714863)
 
@@ -46,11 +45,3 @@ License : GPL-3
 
 BugReports : https://github.com/cardiomoon/SampleSize/Issues
 
-## To run locally
-
-You can run this app in your rstudio with the following R code.
- 
-```
-#install.packages("shiny")
-shiny::runGitHub("cardiomoon/SampleSize")
-```
